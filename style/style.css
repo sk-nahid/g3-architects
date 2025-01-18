@@ -28,7 +28,7 @@
 .description-text{
     
     font-weight: 400;
-    Font size: 16px;
+    Font size: 1rem;
     color: rgb(114, 114, 114);
     margin: 20px 0
 
@@ -42,10 +42,10 @@
     padding: 15px 20px;
     border: none;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 1.1rem;
     font-weight: 600;
     text-decoration: none;
-    margin: 30px 0;
+    margin: 2rem 0;
 }
 
 
@@ -53,32 +53,41 @@
 
 
 /* header styles */
-.brand-title{
-    font-size:45px;
-    font-weight: 700;
-}
+
 .nav-bar{
     justify-content: space-between;
     align-items: center;
+    padding-top: 50px;
+
+}
+.nav-menu{
+    gap: 30px;
+}
+.brand-title{
+    font-size:2.8rem;
+    font-weight: 700;
 }
 .nav-items{
     list-style: none;
-    margin-right: 30px;
+    
 }
 .nav-link{
     text-decoration: none;
     color: rgb(66, 66, 66);
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
+.banner{
+    padding-bottom: 50px;
+}
 .banner-head{
-    width: 876px;
+    max-width: 876px;
     margin: 0 auto;
     text-align: center;
 }
 .banner-title{
-    font-size: 65px;
+    font-size: 3.8rem;
     font-weight: 700;
     padding: 100px 60px 20px 60px; 
 
@@ -86,6 +95,27 @@
 .banner-img{
     padding: 20px 0 60px 0;
 }
-.banner-img>img{
+.banner>img{
     width: 100%;
+}
+
+
+
+/* responsive media quary */
+
+@media screen and (max-width:576px) {
+    .nav-bar{
+        flex-direction: column;
+         
+    }
+    .brand-title{
+        margin-bottom: 20px;
+    }
+    .banner-title{
+        font-size: 2.2rem;
+        padding: 30px 5px 20px 5px;
+    }
+    .brand-title{
+        font-size:2rem;
+    }
 }
