@@ -130,6 +130,83 @@
 #features{
     color: rgb(255, 144, 14);
 }
+
+/* feature-items styles */
+
+.feature-items-container{
+    
+    justify-content: space-between;
+    
+}
+.feature-items{
+   
+    max-width: 650px;
+}
+.feature-items>h2{
+    font-size: 3rem;
+    font-weight: 700;
+    border-left: 4px solid rgb(255, 144, 14);
+    padding-left: 2%;
+    margin-bottom: 5%;
+}
+.feature-item{
+    
+    padding: 1.5% 6.2%;
+    border: 0.5px solid black;
+    margin: 2% 0;
+    box-shadow:2px ;
+}
+.feature-items>img{
+    
+    width: 100%;
+}
+
+#ten-year{
+    font-size: 3rem;
+    font-weight: 700;
+}
+#exparience{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.featurs-items-btn{
+    padding: 6% 8%;
+    position: relative;
+    bottom: 150px;
+    left: -70px;
+}
+/* facts section style */
+.facts{
+    margin-bottom: 300px;
+}
+.facts>h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.facts>p{
+    width: 560px;
+}
+.fact-cart-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:100px;
+    justify-content: space-between;
+    padding: 30px 60px;
+    
+}
+.fact-cart{
+    
+    border: 1px solid rgb(255, 144, 14);
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 8px;
+
+}
+.fact-cart>h6{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 /* responsive media quary */
 
 @media screen and (max-width:576px) {
@@ -145,6 +222,18 @@
     }
     .brand-title{
         font-size:2rem;
+    }
+    .img-container>img{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:999px) {
+    .team{
+        flex-direction: column;
+    }
+    .team{
+        align-items: stretch;
     }
     .img-container>img{
         width: 100%;
